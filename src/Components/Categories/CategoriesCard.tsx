@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ICategoriesProps from '../../Types/CategoriesProps'
 
 const CategoriesCard:FC<ICategoriesProps> = (props) => {
@@ -17,6 +18,11 @@ const CategoriesCard:FC<ICategoriesProps> = (props) => {
                     <Card.Title>{strCategory}</Card.Title>
                     <Card.Text>
                         <strong> Description </strong> : {strCategoryDescription.slice(0,90)}... 
+                        <br />
+                        <br />
+                <Link to={`/Filter/${strCategory}`} >
+                   <Button> Watch category</Button>
+                </Link>
                     </Card.Text>
                 </Card.Body>
             </Card>

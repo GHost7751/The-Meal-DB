@@ -12,7 +12,6 @@ const Header:FC = () => {
                         <Nav className="me-right">
                             <Link to='/'><Nav.Link href="#home">Home</Nav.Link></Link>
                             <Link to='/Categories'><Nav.Link href="#link">Categories</Nav.Link></Link>
-                            <Link to='/'><Nav.Link href="#link">Search</Nav.Link></Link>
                             <Link to='/SingleRandomMea'><Nav.Link href="#link">Single Random Meal</Nav.Link></Link>
                         </Nav>
                     </Navbar.Collapse>
